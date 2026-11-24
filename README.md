@@ -96,7 +96,9 @@ Ethical hackers use this information to understand an organisation's external di
 
 📸 TERMINAL EVIDENCE
 
-!WHOIS Screenshot
+![This is an image of the Whois command results](whois.png)
+![This is an image of the Whois command results](whois1.png)
+
 
 🌐 TASK 2: WHATWEB – WEBSITE TECHNOLOGY FINGERPRINTING
 
