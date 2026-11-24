@@ -60,7 +60,7 @@ PM5	Network Scanning with Zenmap
 
 My objective was not simply to execute commands, but to understand how these tools work, why penetration testers use them and how attackers may use the information they reveal.
 
-🔍 PM1 – FOOTPRINTING & RECONNAISSANCE
+ PM1 – FOOTPRINTING & RECONNAISSANCE
 
 PM1 introduced me to the information-gathering stage of penetration testing. I explored different reconnaissance techniques and learned how information about websites, domains and their underlying infrastructure can be discovered.
 
@@ -78,7 +78,7 @@ whois example.com
 
 Retrieve publicly available domain registration information using the Linux terminal.
 
-🧪 FINDINGS / WHAT I LEARNED
+ FINDINGS / WHAT I LEARNED
 
 WHOIS can reveal information such as:
 
@@ -88,19 +88,20 @@ Domain creation and expiration dates.
 Nameservers.
 Registrant information, where publicly available.
 
-⚠️ HOW ATTACKERS USE IT
+ HOW ATTACKERS USE IT
 
 Attackers may use WHOIS during reconnaissance to gather intelligence about domain ownership and associated infrastructure.
 
 Ethical hackers use this information to understand an organisation's external digital footprint.
 
-📸 TERMINAL EVIDENCE
+ TERMINAL EVIDENCE
 
-![This is an image of the Whois command results](whois.png)
-![This is an image of the Whois command results](whois1.png)
+![This is an image of the Whois command results]([whois.png](https://github.com/chengetai-Mtengo/PENETRATION-TESTING-REPORT/blob/395dd80b7d7fad6b90ceeb67e53ac3a9c566f1c4/whois.png))
+
+![This is an image of the Whois command results in depth](https://github.com/chengetai-Mtengo/PENETRATION-TESTING-REPORT/blob/395dd80b7d7fad6b90ceeb67e53ac3a9c566f1c4/whois1.png)
 
 
-🌐 TASK 2: WHATWEB – WEBSITE TECHNOLOGY FINGERPRINTING
+TASK 2: WHATWEB – WEBSITE TECHNOLOGY FINGERPRINTING
 
 Tool: WhatWeb
 
@@ -120,7 +121,7 @@ Plugins.
 Web frameworks.
 Other website technologies.
 
-🧪 FINDINGS / WHAT I LEARNED
+ FINDINGS / WHAT I LEARNED
 
 I learned that websites rely on different technologies to function.
 
@@ -132,11 +133,12 @@ Attackers may use technology fingerprinting to identify outdated software and in
 
 Penetration testers use this information to understand the technologies exposed by a web application and identify components that may need further security assessment.
 
-📸 TERMINAL EVIDENCE
+ TERMINAL EVIDENCE
 
-!WhatWeb Screenshot
+ ![WhatWeb Screenshot](https://github.com/chengetai-Mtengo/PENETRATION-TESTING-REPORT/blob/395dd80b7d7fad6b90ceeb67e53ac3a9c566f1c4/Whatweb.png)
 
-🌍 TASK 3: NSLOOKUP – DNS RESOLUTION
+
+TASK 3: NSLOOKUP – DNS RESOLUTION
 
 Tool: Nslookup
 
@@ -150,7 +152,7 @@ nslookup example.com
 
 Resolve a domain name into its corresponding IP address using the Domain Name System (DNS).
 
-🧪 FINDINGS / WHAT I LEARNED
+ FINDINGS / WHAT I LEARNED
 
 I learned that DNS translates human-readable domain names into IP addresses that computers use to communicate.
 
@@ -162,11 +164,11 @@ Attackers may use DNS resolution during reconnaissance to discover IP addresses 
 
 This information can help them map an organisation's internet-facing infrastructure.
 
-📸 TERMINAL EVIDENCE
+TERMINAL EVIDENCE
 
-!Nslookup Screenshot
+![Nslookup Screenshot](https://github.com/chengetai-Mtengo/PENETRATION-TESTING-REPORT/blob/395dd80b7d7fad6b90ceeb67e53ac3a9c566f1c4/nslookup.png)
 
-📡 TASK 4: CURL – HTTP RESPONSE HEADER ANALYSIS
+ TASK 4: CURL – HTTP RESPONSE HEADER ANALYSIS
 
 Tool: cURL
 
@@ -188,7 +190,7 @@ Cookies.
 Redirects.
 Other HTTP response headers.
 
-🧪 FINDINGS / WHAT I LEARNED
+WHAT I LEARNED
 
 I learned that HTTP response headers provide useful information about how a web server communicates with clients.
 
@@ -200,11 +202,11 @@ Attackers may analyse HTTP response headers to identify server technologies, und
 
 Penetration testers use this information to assess web application security.
 
-📸 TERMINAL EVIDENCE
+ TERMINAL EVIDENCE
 
-!cURL Screenshot
+![cURL Screenshot](https://github.com/chengetai-Mtengo/PENETRATION-TESTING-REPORT/blob/395dd80b7d7fad6b90ceeb67e53ac3a9c566f1c4/Curl.png)
 
-🛡️ TASK 5: WAFW00F – WEB APPLICATION FIREWALL DETECTION
+TASK 5: WAFW00F – WEB APPLICATION FIREWALL DETECTION
 
 Tool: WAFW00F
 
@@ -220,7 +222,7 @@ Investigate whether a website is protected by a Web Application Firewall (WAF).
 
 A WAF helps protect web applications by monitoring and filtering HTTP traffic.
 
-🧪 FINDINGS / WHAT I LEARNED
+WHAT I LEARNED
 
 I learned about the role of Web Application Firewalls in protecting web applications against malicious requests.
 
@@ -232,11 +234,11 @@ Attackers may attempt to identify the firewall protecting a website to understan
 
 Ethical hackers use WAF identification to assess an application's security architecture.
 
-📸 TERMINAL EVIDENCE
+TERMINAL EVIDENCE
 
-!WAFW00F Screenshot
+![WAFW00F Screenshot](https://github.com/chengetai-Mtengo/PENETRATION-TESTING-REPORT/blob/395dd80b7d7fad6b90ceeb67e53ac3a9c566f1c4/wafwoof.png)
 
-📋 TASK 6: DNS ENUMERATION – DNS RECORD DISCOVERY
+ TASK 6: DNS ENUMERATION – DNS RECORD DISCOVERY
 
 🎯 OBJECTIVE
 
@@ -254,7 +256,7 @@ SPF	Defines authorised email-sending servers, usually through a TXT record.
 SRV	Identifies servers providing particular services.
 CNAME	Creates an alias pointing to another domain.
 
-🧪 FINDINGS / WHAT I LEARNED
+WHAT I LEARNED
 
 I learned that DNS records provide important information about how domains and their associated services are configured.
 
@@ -266,11 +268,11 @@ Attackers may use DNS enumeration to discover infrastructure, identify associate
 
 Security professionals use DNS enumeration to document and assess an organisation's digital footprint.
 
-📸 TERMINAL EVIDENCE
+ TERMINAL EVIDENCE
 
-!DNS Enumeration Screenshot
+![DNS Enumeration Screenshot](https://github.com/chengetai-Mtengo/PENETRATION-TESTING-REPORT/blob/073170782bfd41b62941ad23b8d809e45d06d3d9/dns.png)
 
-💡 WHY FOOTPRINTING MATTERS
+ WHY FOOTPRINTING MATTERS
 
 Footprinting is an important stage of penetration testing because it provides the foundation for understanding a target environment.
 
@@ -285,13 +287,13 @@ Understand an organisation's external attack surface.
 
 My takeaway: Before identifying vulnerabilities, we first need to understand the environment we are assessing.
 
-🔎 PM2 – GOOGLE HACKING DATABASE (GHDB)
+ PM2 – GOOGLE HACKING DATABASE (GHDB)
 
 PM2 introduced me to the Google Hacking Database and demonstrated that Google is more than just a search engine.
 
 I learned how advanced search techniques can be used to discover information that organisations may have unintentionally exposed online.
 
-🌐 TASK 1: EXPLORING THE GOOGLE HACKING DATABASE
+ TASK 1: EXPLORING THE GOOGLE HACKING DATABASE
 
 Tool: Google Hacking Database (GHDB)
 
@@ -299,7 +301,7 @@ Tool: Google Hacking Database (GHDB)
 
 Explore how advanced Google search techniques can reveal publicly indexed information and potentially exposed systems.
 
-🧪 FINDINGS / WHAT I LEARNED
+WHAT I LEARNED
 
 One of our practical exercises involved searching for publicly exposed security camera interfaces.
 
@@ -321,7 +323,7 @@ Misconfigured directories.
 Administrative interfaces.
 Publicly accessible devices.
 
-🧠 MY ETHICAL REFLECTION
+MY ETHICAL REFLECTION
 
 This practical taught me that just because information is publicly accessible does not mean it is ethical to access, download or distribute it.
 
@@ -329,7 +331,7 @@ I chose not to share the camera links because respecting people's privacy is jus
 
 My takeaway: Technical ability must always be accompanied by ethical responsibility.
 
-🖥️ PM5 – NETWORK SCANNING WITH ZENMAP
+PM5 – NETWORK SCANNING WITH ZENMAP
 
 PM5 focused on network scanning using Zenmap, the graphical user interface for Nmap.
 
@@ -337,7 +339,7 @@ I particularly enjoyed using Zenmap because its graphical interface made it easi
 
 This module helped me understand how network discovery supports penetration testing and network administration.
 
-🐧 TASK 1: INSTALLING ZENMAP ON LINUX
+TASK 1: INSTALLING ZENMAP ON LINUX
 
 Tool: Zenmap / Linux Terminal
 
@@ -351,7 +353,7 @@ sudo apt update
 
 Prepare my Linux environment before installing Zenmap.
 
-🧪 FINDINGS / WHAT I LEARNED
+WHAT I LEARNED
 
 My installation process was slightly different from the provided instructions because I was using Linux.
 
@@ -367,11 +369,9 @@ Installing applications.
 Administrative privileges.
 Using graphical cybersecurity applications.
 
-📸 TERMINAL EVIDENCE
 
-!Zenmap Installation
 
-🌐 TASK 2: DISCOVERING MY LOCAL IP ADDRESS
+ TASK 2: DISCOVERING MY LOCAL IP ADDRESS
 
 Tool: Linux Terminal
 
@@ -385,17 +385,17 @@ ip addr
 
 Identify my local IP address, network interfaces and LAN subnet.
 
-🧪 FINDINGS / WHAT I LEARNED
+WHAT I LEARNED
 
 I used the ip addr command to identify my local IP address and network interfaces.
 
 This helped me understand my local network addressing and LAN subnet before proceeding with network discovery.
 
-📸 TERMINAL EVIDENCE
+TERMINAL EVIDENCE
 
-!Local IP Address
+![Local IP Address](https://github.com/chengetai-Mtengo/PENETRATION-TESTING-REPORT/blob/395dd80b7d7fad6b90ceeb67e53ac3a9c566f1c4/Showing%20my%20ipaddress%20in%20Terminal.png)
 
-🖥️ TASK 3: DISCOVERING LIVE HOSTS
+ TASK 3: DISCOVERING LIVE HOSTS
 
 Tool: Zenmap
 
@@ -403,7 +403,7 @@ Tool: Zenmap
 
 Use Zenmap to identify live hosts or devices within the authorised network environment.
 
-🧪 FINDINGS / WHAT I LEARNED
+ WHAT I LEARNED
 
 I examined the scanning results to understand which devices were actively responding on the network.
 
@@ -413,11 +413,11 @@ Host discovery provides an initial overview of the devices available within a ne
 
 Network administrators and penetration testers use host discovery to identify active devices and understand their network environments.
 
-📸 ZENMAP EVIDENCE
 
-!Live Hosts
 
-📊 TASK 4: IDENTIFYING THE NUMBER OF LIVE HOSTS
+![Live Hosts](https://github.com/chengetai-Mtengo/PENETRATION-TESTING-REPORT/blob/395dd80b7d7fad6b90ceeb67e53ac3a9c566f1c4/Zenmap%205%20hosts.png)
+
+ TASK 4: IDENTIFYING THE NUMBER OF LIVE HOSTS
 
 Tool: Zenmap
 
@@ -425,17 +425,17 @@ Tool: Zenmap
 
 Determine the number of live hosts discovered during the network scanning exercise.
 
-🧪 FINDINGS / WHAT I LEARNED
+WHAT I LEARNED
 
 I analysed the scan results to establish the number of active hosts identified within the network.
 
 This helped me understand how network scanning can provide an overview of connected devices.
 
-📸 ZENMAP EVIDENCE
+ ZENMAP EVIDENCE
 
-!Live Host Count
+![Live Host Count](https://github.com/chengetai-Mtengo/PENETRATION-TESTING-REPORT/blob/395dd80b7d7fad6b90ceeb67e53ac3a9c566f1c4/Zenmap%205%20hosts.png)
 
-📍 TASK 5: IDENTIFYING IP ADDRESSES OF LIVE HOSTS
+ TASK 5: IDENTIFYING IP ADDRESSES OF LIVE HOSTS
 
 Tool: Zenmap
 
@@ -443,17 +443,14 @@ Tool: Zenmap
 
 Identify the IP addresses associated with the discovered live hosts.
 
-🧪 FINDINGS / WHAT I LEARNED
+WHAT I LEARNED
 
 I examined the Zenmap results to identify the IP addresses of the discovered devices.
 
 IP addresses help distinguish individual devices within a network and are useful for documenting network assets.
 
-📸 ZENMAP EVIDENCE
 
-!Host IP Addresses
-
-🔗 TASK 6: IDENTIFYING MAC ADDRESSES
+TASK 6: IDENTIFYING MAC ADDRESSES
 
 Tool: Zenmap
 
@@ -461,17 +458,13 @@ Tool: Zenmap
 
 Examine MAC address information associated with discovered hosts where available.
 
-🧪 FINDINGS / WHAT I LEARNED
+WHAT I LEARNED
 
 I learned that a MAC address is a hardware identifier associated with a network interface.
 
 MAC addresses help network administrators identify devices on local networks and investigate unfamiliar devices.
 
-📸 ZENMAP EVIDENCE
-
-!MAC Addresses
-
-🗺️ TASK 7: DISPLAYING NETWORK TOPOLOGY
+TASK 7: DISPLAYING NETWORK TOPOLOGY
 
 Tool: Zenmap
 
@@ -479,7 +472,7 @@ Tool: Zenmap
 
 Use Zenmap's graphical capabilities to display and examine the network topology output.
 
-🧪 FINDINGS / WHAT I LEARNED
+WHAT I LEARNED
 
 I explored the network topology visualisation feature and learned how it provides a visual representation of the discovered network structure.
 
@@ -490,15 +483,15 @@ Identify connected devices.
 Visualise network relationships.
 Support network security assessments.
 
-📸 TOPOLOGY EVIDENCE
+TOPOLOGY EVIDENCE
 
-!Zenmap Network Topology
+![Zenmap Network Topology](https://github.com/chengetai-Mtengo/PENETRATION-TESTING-REPORT/blob/395dd80b7d7fad6b90ceeb67e53ac3a9c566f1c4/Zenmap%20topology.png)
 
-📄 SUPPORTING DOCUMENTATION
+SUPPORTING DOCUMENTATION
 
 View Zenmap Network Topology PDF
 
-🧠 SKILLS AND TOOLS ACQUIRED
+SKILLS AND TOOLS ACQUIRED
 Category	Tools / Skills
 Reconnaissance	WHOIS
 Technology Fingerprinting	WhatWeb
@@ -512,7 +505,7 @@ Network Visualisation	Zenmap
 Operating System	Linux
 Networking	IP Addresses, MAC Addresses & Subnets
 Ethics	Responsible Information Handling
-⚖️ ETHICAL CONSIDERATIONS
+ ETHICAL CONSIDERATIONS
 
 Throughout these practical exercises, I learned that cybersecurity tools can be used for both defensive and malicious purposes.
 
@@ -527,7 +520,7 @@ Document findings professionally.
 
 I believe that technical knowledge must always be accompanied by ethical responsibility.
 
-🏁 FINAL CONCLUSION
+FINAL CONCLUSION
 
 This Footprinting and Scanning practical has been an important milestone in my cybersecurity learning journey.
 
@@ -549,7 +542,7 @@ My biggest takeaway: You cannot secure what you do not understand.
 
 This is only the beginning of my cybersecurity journey, and I look forward to developing more practical skills in ethical hacking, networking and information security.
 
-👩‍💻 ABOUT THE AUTHOR
+ABOUT THE AUTHOR
 
 Chengetai Bupe Mtengo
 
@@ -569,27 +562,6 @@ W2-PM-FINAL | B082 – NETWORKWALKS
 
 </div>
 
-📁 REPOSITORY STRUCTURE
-text
-Footprinting-and-Scanning/
-│
-├── README.md
-│
-├── screenshots/
-│   ├── pm1-whois.png
-│   ├── pm1-whatweb.png
-│   ├── pm1-nslookup.png
-│   ├── pm1-curl.png
-│   ├── pm1-wafw00f.png
-│   ├── pm1-dns-enumeration.png
-│   │
-│   ├── pm5-installation.png
-│   ├── pm5-ip-address.png
-│   ├── pm5-live-hosts.png
-│   ├── pm5-host-count.png
-│   ├── pm5-host-ips.png
-│   ├── pm5-mac-addresses.png
-│   └── pm5-network-topology.png
-│
-└── docs/
-    └── zenmap-network-topology.pdf
+
+
+
